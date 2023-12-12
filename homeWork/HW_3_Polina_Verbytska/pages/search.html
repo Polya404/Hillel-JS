@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        label.search {
+            display: inline;
+        }
+
+        label.price,
+        label.year {
+            display: inline-block;
+        }
+
+        input {
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Page</h1>
+    <form action="https://fom.in.ua/echo" method="GET">
+
+        <label class="search">
+            Search
+            <input type="search" placeholder="Type..." name="search">
+        </label>
+        <button type="submit">
+            Search
+        </button>
+
+        <label for="bodyType">Choose body type for your car from the list:</label>
+        <input list="bodyTypes" name="bodyType" id="bodyType">
+        <datalist id="bodyTypes">
+            <option value="Sedan">
+            <option value="Coupe">
+            <option value="Cabriolet">
+            <option value="Minivan">
+            <option value="Hatchback">
+        </datalist>
+
+        <label for="carBrand">Choose prefer car from the list:</label>
+        <input list="carBrands" name="carBrand" id="carBrand">
+        <datalist id="carBrands">
+            <option value="Volkswagen">
+            <option value="Toyota RAV4">
+            <option value="Ford Mustang GT500">
+            <option value="Hyundai Sonata">
+            <option value="Chevrolet Corvette C8">
+        </datalist>
+
+        <label for="manufacturerCountry">Choose prefer manufacturer country from the list:</label>
+        <input list="manufacturerCountries" name="manufacturerCountry" id="manufacturerCountry">
+        <datalist id="manufacturerCountries">
+            <option value="Germany">
+            <option value="Japan">
+            <option value="USA">
+            <option value="Korea">
+        </datalist>
+        <br>
+
+        <label class="price">
+            Price (from min to max):
+            <input type="number" name="minPrice" placeholder="Min price" step="1000" min="2000" value="2000">
+        </label>
+        <label class="price">
+            <input type="number" name="maxPrice" placeholder="Max price" step="1000" min="2000">
+        </label>
+        <br>
+        <label class="year">
+            Issue date (from and to):
+            <input type="number" name="minYear" placeholder="Min year" min="1970" value="1970" max="2024">
+        </label>
+        <label class="year">
+            <input type="number" name="maxYear" placeholder="Max year" max="2024" min="1970" value="2000">
+        </label>
+        <br>
+
+        Car condition:
+        <label>
+            <input name="new" type="checkbox">
+            <span>New</span>
+        </label>
+
+        <label>
+            <input name="damaged" type="checkbox">
+            <span>Damaged</span>
+        </label>
+
+        <label>
+            <input name="onCredit" type="checkbox">
+            <span>On credit</span>
+        </label>
+
+        <label>
+            <input name="notCustomCleared" type="checkbox">
+            <span>Not customs cleared</span>
+        </label>
+
+        <label>
+            Fuel Type:
+            <select name="fuelType">
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+                <option value="diesel">Electro</option>
+            </select>
+        </label>
+
+        <label>
+            Transmission type:
+            <select name="transmissionType">
+                <option value="manual">Manual</option>
+                <option value="automatic">Automatic</option>
+            </select>
+        </label>
+        <label>
+            Color:
+            <input type="text" name="color" placeholder="Red">
+        </label>
+        Comfort:
+        <label>
+            <input name="sunroof" type="checkbox">
+            <span>Sunroof</span>
+        </label>
+        <label>
+            <input name="leatherInterior" type="checkbox">
+            <span>Leather Interior</span>
+        </label>
+        <label>
+            <input name="conditioner" type="checkbox">
+            <span>Conditioner</span>
+        </label>
+        <label>
+            <input name="climateControl" type="checkbox">
+            <span>Climate control</span>
+        </label>
+        <label>
+            <input name="cruiseControl" type="checkbox">
+            <span>Cruise control</span>
+        </label>
+
+        <button type="submit">Search</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-spacing: 2px;
+        }
+
+        table,
+        td {
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/pages/dog.html">Go to second task</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4" style="background-color: cornflowerblue;">MY FIRST TABLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: cornflowerblue;">First cell</td>
+                        <td style="background-color: cornflowerblue;">Second cell</td>
+                        <td style="background-color:yellow;" colspan="2" rowspan="3">6 cellls merged together</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: yellow;" colspan="2">2 cells merged into one</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: yellow;">1st cell 3rd row</td>
+                        <td style="background-color: yellow;">2en cell 3rd row</td>
+                    </tr>
+                    <tr class="hidden">
+                        <td>Fake cell</td>
+                        <td>Fake cell</td>
+                        <td>Fake cell</td>
+                        <td>Fake cell</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="background-color: yellow;">Do you like this table?</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <hr>
+        <div style="background-color: #fffc38; display: table;">
+            <table style="position: relative; z-index: 10;">
+                <thead>
+                    <tr>
+                        <td style="background-color: #389cff; position: relative;" colspan="3"> MY FIRST TABLE
+                            <span
+                                style="position: absolute;top: -3px;width: calc(100% + 6px);left: -3px;height: calc(100% + 6px);background: #389cff;z-index: -1;">
+                                sdfsdf </span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody style="background-color: #fffc38">
+                    <tr>
+                        <td style="background-color: #389cff; position: relative"> First cell
+                            <span
+                                style="position: absolute;top: -3px;width: calc(100% + 6px);left: -3px;height: calc(100% + 6px);background: #389cff;z-index: -1;">
+                                sdfsdf </span>
+                        </td>
+                        <td style="background-color: #389cff; position: relative"> Second cell
+                            <span
+                                style="position: absolute;top: -3px;width: calc(100% + 6px);left: -3px;height: calc(100% + 6px);background: #389cff;z-index: -1;">
+                                sdfsdf </span>
+                        </td>
+                        <td rowspan="3">6 cell merged together</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">2 cell merged into one</td>
+                    </tr>
+                    <tr>
+                        <td>1st cell 3rd row</td>
+                        <td>2nd cell 3rd row</td>
+                    </tr>
+                    <tr class="hidden">
+                        <td>Fake cell</td> 
+                        <td>Fake cell</td>
+                        <td>Fake cell</td>
+                    </tr>
+                </tbody>
+                <tfoot style="background-color: #fffc38">
+                    <tr>
+                        <td colspan="3">Do you like tables?</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 5px 5px;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Return to main page</a>
+        </nav>
+    </header>
+    <h1>Registration Page</h1>
+    <main>
+        <form action="https://fom.in.ua/echo" method="GET">
+            <fieldset>
+                <legend>Registration</legend>
+                <label>
+                    Name
+                    <input type="text" placeholder="First name" name="firstName" required>
+                </label>
+                <label>
+                    <input type="text" placeholder="Last name" name="lastName" required>
+                </label>
+                <label>
+                    Birthday
+                    <input type="date" name="birthday">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="myEmail" placeholder="test@gmail.com" pattern="^[A-Za-z0-9+_.-]+@(.+)$" required>
+                </label>
+                <label>
+                    Telephone
+                    <input type="tel" placeholder="+380953765514" name="telephone" pattern="^([+]{1})[0-9]{8,17}$">
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="myPassword" placeholder="password" minlength="6">
+                </label>
+                <label>
+                    Confirm Password
+                    <input type="password" name="confirmPassword" placeholder="confirm password" required minlength="6">
+                </label>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <a href="/pages/authorization.html" class="button-link">
+                    Back to authorization
+                </a>
+
+                <a href="/pages/search.html" class="button-link">
+                    Go to search
+                </a>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
