@@ -22,7 +22,6 @@ body {
     margin: 0% auto;
     min-width: 1920px;
     height: 700px;
-    flex-shrink: 0;
     background: #EEEFF1;
     font-family: Roboto;
 
@@ -43,7 +42,7 @@ body {
 
 .homepage {
     min-width: 98px;
-    color: var(--Accent, #34547A);
+    color:  #34547A;
     font-weight: 500;
 }
 
@@ -72,12 +71,10 @@ body {
 
 
 .header {
-    margin: 0 auto;
     display: block;
-    padding: 151px 980px 0 0px;
+    margin: 151px 0px 0px;
     width: 541px;
     min-height: 45px;
-    flex-shrink: 0;
     color: #000;
     font-family: Roboto;
     font-size: 48px;
@@ -87,13 +84,12 @@ body {
 }
 
 .text {
-    margin: 0% auto;
+    margin: 0 auto;
     display: block;
     text-align: center;
-    padding: 60px 980px 0 0px;
+    margin: 60px 980px 0 0px;
     min-width: 500px;
     min-height: 67px;
-    flex-shrink: 0;
     color: #727272;
     font-family: Roboto;
     font-size: 16px;
@@ -105,31 +101,26 @@ body {
 
 .first-screen-button {
     margin: 0 auto;
-    padding: 65px 1296px 141px 0px;
+    margin: 65px 1296px 0px 0px;
 }
 
 .first-screen-button button {
     margin: 0 auto;
     min-width: 225px;
     min-height: 65px;
-    flex-shrink: 0;
     background: #34547A;
 }
 
 .button {
     display: block;
-    border: 0px;
-    margin: 0%;
-    padding: 0%;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .button span {
-    display: block;
-    width: 143px;
-    height: 26px;
-    flex-shrink: 0;
     padding: 19px 41px 20px 41px;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -144,7 +135,6 @@ body {
     margin: 0 auto;
     min-width: 1920px;
     height: 359px;
-    flex-shrink: 0;
     background: #F9F9F9;
 }
 
@@ -153,7 +143,6 @@ body {
     padding: 112px 690px 100px 690px;
     width: 540px;
     height: 154px;
-    flex-shrink: 0;
 }
 
 .header-about-me {
@@ -161,7 +150,6 @@ body {
     margin: 0%;
     width: 403px;
     height: 30px;
-    flex-shrink: 0;
     color: #000;
     text-align: center;
 
@@ -178,7 +166,6 @@ body {
     margin: 0%;
     max-width: 450px;
     height: 80px;
-    flex-shrink: 0;
 
     color: #727272;
     text-align: center;
@@ -193,8 +180,7 @@ body {
 .numbers {
     min-width: 1920px;
     height: 250px;
-    flex-shrink: 0;
-    background: var(--Accent, #34547A);
+    background: #34547A;
 }
 
 .wrapper {
@@ -207,7 +193,6 @@ body {
     float: left;
     min-width: 141px;
     height: 50px;
-    flex-shrink: 0;
     padding: 100px 45px 100px 0;
 }
 
@@ -218,16 +203,14 @@ body {
 .group {
     width: 71px;
     height: 44px;
-    flex-shrink: 0;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .group span {
     min-width: 71px;
     height: 15px;
-    flex-shrink: 0;
 
-    color: #FFF;
+    color: #fff;
 
     font-family: Roboto;
     font-size: 16px;
@@ -240,8 +223,7 @@ body {
     padding: 3px 0 28px 0;
     min-width: 36px;
     height: 19px;
-    flex-shrink: 0;
-    color: #FFF;
+    color: #fff;
     display: inline;
 
     font-family: Roboto;
@@ -255,7 +237,6 @@ body {
     margin: 0 auto;
     width: 1920px;
     height: 1004px;
-    flex-shrink: 0;
     color: #EEEFF1;
 }
 
@@ -268,8 +249,7 @@ body {
     margin: 0 690px;
     width: 540px;
     height: 147px;
-    flex-shrink: 0;
-    color: #000000;
+    color: #000;
 }
 
 .video-title span {
@@ -277,7 +257,6 @@ body {
     margin: 0 69px 0 68px;
     width: 403px;
     height: 30px;
-    flex-shrink: 0;
     color: #000;
     text-align: center;
 
@@ -293,7 +272,6 @@ body {
     margin: 50px 0;
     max-width: 500px;
     height: 67px;
-    flex-shrink: 0;
     color: #727272;
     text-align: center;
 
@@ -308,7 +286,6 @@ body {
     margin: 57px 405px 0 405px;
     min-width: 1110px;
     height: 600px;
-    flex-shrink: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
@@ -316,16 +293,14 @@ body {
     margin: 0 auto;
     min-width: 1920px;
     height: 151px;
-    flex-shrink: 0;
-    background: var(--Accent, #34547A);
+    background: #34547A;
 }
 
 .footer h3 {
     margin: 0 auto;
     width: 130px;
     height: 19px;
-    flex-shrink: 0;
-    color: #FFF;
+    color: #fff;
 
     padding: 50px 1384px 20px 406px;
     font-family: Roboto;
@@ -340,8 +315,7 @@ body {
     padding: 0 1321px 50px 406px;
     width: 193px;
     height: 12px;
-    flex-shrink: 0;
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 13px;
     font-style: normal;
